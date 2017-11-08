@@ -15,8 +15,9 @@
             <div class="header_widgets">
               <div class="circle_icon"> <i class="fa fa-phone" aria-hidden="true"></i> </div>
               <p class="uppercase_text">Phone</p>
-              <a href="tel:61-1234-5678-09">+917795425524</a> </div>
-   <?php   if(strlen($_SESSION['login'])==0)
+              <a href="tel:61-1234-5678-09">+917795425524</a>
+            </div>
+            <?php   if(strlen($_SESSION['login'])==0)
 	{	
 ?>
  <div class="login_btn"> <a href="#loginform" class="btn btn-xs uppercase" data-toggle="modal" data-dismiss="modal">Login / Register</a> </div>
@@ -36,6 +37,7 @@ echo "Welcome!";
   <nav id="navigation_bar" class="navbar navbar-default">
     <div class="container">
       <div class="navbar-header">
+      
         <button id="menu_slide" data-target="#navigation" aria-expanded="false" data-toggle="collapse" class="navbar-toggle collapsed" type="button"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
       </div>
       <div class="header_wrap">
@@ -85,9 +87,11 @@ foreach($results as $result)
           <li><a href="car-listing.php">Car Listing</a>
           <li><a href="page.php?type=faqs">FAQs</a></li>
           <li><a href="contact-us.php">Contact Us</a></li>
-
+        
         </ul>
+        
       </div>
+      
     </div>
   </nav>
   <!-- Navigation end --> 
