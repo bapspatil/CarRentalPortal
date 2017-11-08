@@ -76,7 +76,7 @@ error_reporting(0);
       <!-- Nav tabs -->
       <div class="recent-tab">
         <ul class="nav nav-tabs" role="tablist">
-          <li role="presentation" class="active"><a href="#resentnewcar" role="tab" data-toggle="tab">New Car</a></li>
+          <li role="presentation" class="active"><a href="#resentnewcar" role="tab" data-toggle="tab">New Cars</a></li>
         </ul>
       </div>
       <!-- Recently Listed New Cars -->
