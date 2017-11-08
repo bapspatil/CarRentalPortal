@@ -11,20 +11,11 @@
             <div class="header_widgets">
               <div class="circle_icon"> <i class="fa fa-envelope" aria-hidden="true"></i> </div>
               <p class="uppercase_text">For Support Mail us : </p>
-              <a href="mailto:info@example.com">info@example.com</a> </div>
+              <a href="mailto:bapoo1998@gmail.com">bapoo1998@gmail.com</a> </div>
             <div class="header_widgets">
               <div class="circle_icon"> <i class="fa fa-phone" aria-hidden="true"></i> </div>
               <p class="uppercase_text">Service Helpline Call Us: </p>
-              <a href="tel:61-1234-5678-09">+91-1234-5678-9</a> </div>
-            <div class="social-follow">
-              <ul>
-                <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-              </ul>
-            </div>
+              <a href="tel:61-1234-5678-09">+917795425524</a> </div>
    <?php   if(strlen($_SESSION['login'])==0)
 	{	
 ?>
@@ -32,7 +23,7 @@
 <?php }
 else{ 
 
-echo "Welcome To Car rental portal";
+echo "Welcome!";
  } ?>
           </div>
         </div>
@@ -65,16 +56,16 @@ foreach($results as $result)
 	 echo htmlentities($result->FullName); }}?><i class="fa fa-angle-down" aria-hidden="true"></i></a>
               <ul class="dropdown-menu">
            <?php if($_SESSION['login']){?>
-            <li><a href="profile.php">Profile Settings</a></li>
+            <li><a href="post-testimonial.php">Write A Review</a></li>
+          <li><a href="my-testimonials.php">My Reviews</a></li>
               <li><a href="update-password.php">Update Password</a></li>
-            <li><a href="my-booking.php">My Booking</a></li>
-            <li><a href="post-testimonial.php">Post a Testimonial</a></li>
-          <li><a href="my-testimonials.php">My Testimonial</a></li>
+            <li><a href="my-booking.php">My Bookings</a></li>
+          <li><a href="profile.php">Profile Settings</a></li>
             <li><a href="logout.php">Sign Out</a></li>
             <?php } else { ?>
             <li><a href="#loginform"  data-toggle="modal" data-dismiss="modal">Profile Settings</a></li>
               <li><a href="#loginform"  data-toggle="modal" data-dismiss="modal">Update Password</a></li>
-            <li><a href="#loginform"  data-toggle="modal" data-dismiss="modal">My Booking</a></li>
+            <li><a href="#loginform"  data-toggle="modal" data-dismiss="modal">My Bookings</a></li>
             <li><a href="#loginform"  data-toggle="modal" data-dismiss="modal">Post a Testimonial</a></li>
           <li><a href="#loginform"  data-toggle="modal" data-dismiss="modal">My Testimonial</a></li>
             <li><a href="#loginform"  data-toggle="modal" data-dismiss="modal">Sign Out</a></li>

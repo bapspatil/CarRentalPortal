@@ -53,9 +53,9 @@ error_reporting(0);
       <div class="row">
         <div class="col-md-5 col-md-push-7">
           <div class="banner_content">
-            <h1>Find the right car for you.</h1>
-            <p>We have more than a thousand cars for you to choose. </p>
-            <a href="#" class="btn">Read More <span class="angle_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span></a> </div>
+            <h1>You need a car. Let us help.</h1>
+            <p>A car rental portal project by Bapusaheb Patil.</p>
+            <a href="page.php?type=aboutus" class="btn">Read More <span class="angle_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span></a> </div>
         </div>
       </div>
     </div>
