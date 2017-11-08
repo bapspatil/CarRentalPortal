@@ -57,22 +57,6 @@ else{
 <!--Header-->
 <?php include('includes/header.php');?>
 <!--Page Header-->
-<section class="page-header profile_page">
-  <div class="container">
-    <div class="page-header_wrap">
-      <div class="page-heading">
-        <h1>My Testimonials</h1>
-      </div>
-      <ul class="coustom-breadcrumb">
-        <li><a href="#">Home</a></li>
-        <li>My Testimonials</li>
-      </ul>
-    </div>
-  </div>
-  <!-- Dark Overlay-->
-  <div class="dark-overlay"></div>
-</section>
-<!-- /Page Header--> 
 
 <?php 
 $useremail=$_SESSION['login'];
@@ -88,10 +72,6 @@ foreach($results as $result)
 { ?>
 <section class="user_profile inner_pages">
   <div class="container">
-    <div class="user_profile_info gray-bg padding_4x4_40">
-      <div class="upload_user_logo"> <img src="assets/images/dealer-logo.jpg" alt="image">
-      </div>
-
       <div class="dealer_info">
         <h5><?php echo htmlentities($result->FullName);?></h5>
         <p><?php echo htmlentities($result->Address);?><br>
@@ -107,7 +87,7 @@ foreach($results as $result)
 
 
         <div class="profile_wrap">
-          <h5 class="uppercase underline">My Testimonials </h5>
+          <h5 class="uppercase underline">My Reviews</h5>
           <div class="my_vehicles_list">
             <ul class="vehicle_listing">
 <?php 

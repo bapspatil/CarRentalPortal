@@ -64,10 +64,10 @@ echo "<script>alert('Something went wrong. Please try again');</script>";
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-md-push-6 text-right">
-        <p>1RN15CS033 | 5th Semester | RNSIT</p>
+        <p>5th Semester | RNSIT</p>
         </div>
         <div class="col-md-6 col-md-pull-6">
-          <p class="copy-right">A car rental portal for the DBMS mini-project by Bapusaheb Patil.</p>
+          <p class="copy-right">A car rental portal for the DBMS mini-project by Harshitha J & Bapusaheb Patil.</p>
         </div>
       </div>
     </div>

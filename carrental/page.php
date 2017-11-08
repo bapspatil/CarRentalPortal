@@ -72,7 +72,8 @@ foreach($results as $result)
 
 <section class="about_us section-padding">
 
-<center><img src="assets/images/mypic.png" alt="About Me" width="256" height="256"></center>
+<center><img src="assets/images/mypic.png" alt="About Me" width="256" height="256">
+<img src="assets/images/mypic1.png" alt="About Me1" width="256" height="256"></center>
   <div class="container">
     <div class="section-header text-center">
 

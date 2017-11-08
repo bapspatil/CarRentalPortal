@@ -126,7 +126,7 @@ foreach($results as $result)
          </div>
       
       <!--Side-Bar-->
-      <aside class="col-md-3 col-md-pull-9">
+      <!-- <aside class="col-md-3 col-md-pull-9">
         <div class="sidebar_widget">
           <div class="widget_heading">
             <h5><i class="fa fa-filter" aria-hidden="true"></i> Find Your  Car </h5>
@@ -194,7 +194,7 @@ foreach($results as $result)
             </ul>
           </div>
         </div>
-      </aside>
+      </aside> -->
       <!--/Side-Bar--> 
     </div>
   </div>

@@ -54,7 +54,7 @@ error_reporting(0);
         <div class="col-md-5 col-md-push-7">
           <div class="banner_content">
             <h1>You need a car. Let us give you one.</h1>
-            <p>A car rental portal project by Bapusaheb Patil.</p>
+            <p>A car rental portal project by Harshitha J & Bapusaheb Patil.</p>
             <a href="page.php?type=aboutus" class="btn">Read More <span class="angle_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span></a> </div>
         </div>
       </div>
@@ -105,7 +105,7 @@ foreach($results as $result)
 </div>
 <div class="car-title-m">
 <h6><a href="vehical-details.php?vhid=<?php echo htmlentities($result->id);?>"><?php echo htmlentities($result->BrandName);?> , <?php echo htmlentities($result->VehiclesTitle);?></a></h6>
-<span class="price">$<?php echo htmlentities($result->PricePerDay);?> /Day</span> 
+<span class="price">Rs. <?php echo htmlentities($result->PricePerDay);?> /Day</span> 
 </div>
 <div class="inventory_info_m">
 <p><?php echo substr($result->VehiclesOverview,0,70);?></p>

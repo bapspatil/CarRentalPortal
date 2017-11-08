@@ -103,7 +103,7 @@ foreach($results as $result)
           </div>
           <div class="product-listing-content">
             <h5><a href="vehical-details.php?vhid=<?php echo htmlentities($result->id);?>"><?php echo htmlentities($result->BrandName);?> , <?php echo htmlentities($result->VehiclesTitle);?></a></h5>
-            <p class="list-price">$<?php echo htmlentities($result->PricePerDay);?> Per Day</p>
+            <p class="list-price">Rs. <?php echo htmlentities($result->PricePerDay);?> Per Day</p>
             <ul>
               <li><i class="fa fa-user" aria-hidden="true"></i><?php echo htmlentities($result->SeatingCapacity);?> seats</li>
               <li><i class="fa fa-calendar" aria-hidden="true"></i><?php echo htmlentities($result->ModelYear);?> model</li>
@@ -116,7 +116,7 @@ foreach($results as $result)
          </div>
       
       <!--Side-Bar-->
-      <aside class="col-md-3 col-md-pull-9">
+      <!-- <aside class="col-md-3 col-md-pull-9">
         <div class="sidebar_widget">
           <div class="widget_heading">
             <h5><i class="fa fa-filter" aria-hidden="true"></i> Find Your  Car </h5>
@@ -184,7 +184,7 @@ foreach($results as $result)
             </ul>
           </div>
         </div>
-      </aside>
+      </aside> -->
       <!--/Side-Bar--> 
     </div>
   </div>

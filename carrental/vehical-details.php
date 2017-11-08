@@ -124,7 +124,7 @@ $_SESSION['brndid']=$result->bid;
       </div>
       <div class="col-md-3">
         <div class="price_info">
-          <p>$<?php echo htmlentities($result->PricePerDay);?> </p>Per Day
+          <p>Rs. <?php echo htmlentities($result->PricePerDay);?> </p>Per Day
          
         </div>
       </div>
