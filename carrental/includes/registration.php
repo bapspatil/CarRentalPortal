@@ -16,11 +16,11 @@ $query->execute();
 $lastInsertId = $dbh->lastInsertId();
 if($lastInsertId)
 {
-echo "<script>alert('Registration successfull. Now you can login');</script>";
+echo "<script>alert('Registration successful. Now you can login');</script>";
 }
 else 
 {
-echo "<script>alert('Something went wrong. Please try again');</script>";
+echo "<script>alert('Something went wrong. Please try again.');</script>";
 }
 }
 
@@ -47,7 +47,7 @@ function valid()
 {
 if(document.signup.password.value!= document.signup.confirmpassword.value)
 {
-alert("Password and Confirm Password Field do not match  !!");
+alert("Password and Confirm Password fields do not match!");
 document.signup.confirmpassword.focus();
 return false;
 }

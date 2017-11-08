@@ -187,7 +187,6 @@ foreach($results as $result)
 
 
         <div class="testimonial-m">
-          <div class="testimonial-img"> <img src="assets/images/cat-profile.png" alt="" /> </div>
           <div class="testimonial-content">
             <div class="testimonial-heading">
               <h5><?php echo htmlentities($result->FullName);?></h5>
