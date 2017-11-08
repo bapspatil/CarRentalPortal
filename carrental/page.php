@@ -45,7 +45,7 @@ include('includes/config.php');
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
 </head>
 <body>
-<<!-- Start Switcher -->
+<!-- Start Switcher -->
 <?php include('includes/colorswitcher.php');?>
 <!-- /Switcher -->  
         
@@ -65,12 +65,14 @@ foreach($results as $result)
 { ?>
 <section class="page-header aboutus_page">
   <div class="container">
-    
   </div>
   <!-- Dark Overlay-->
   <div class="dark-overlay"></div>
 </section>
+
 <section class="about_us section-padding">
+
+<center><img src="assets/images/mypic.png" alt="About Me" width="256" height="256"></center>
   <div class="container">
     <div class="section-header text-center">
 

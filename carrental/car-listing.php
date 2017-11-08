@@ -61,10 +61,7 @@ error_reporting(0);
       <div class="page-heading">
         <h1>Car Listing</h1>
       </div>
-      <ul class="coustom-breadcrumb">
-        <li><a href="#">Home</a></li>
-        <li>Car Listing</li>
-      </ul>
+    
     </div>
   </div>
   <!-- Dark Overlay-->

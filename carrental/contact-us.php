@@ -18,11 +18,11 @@ $query->execute();
 $lastInsertId = $dbh->lastInsertId();
 if($lastInsertId)
 {
-$msg="Query Sent. We will contact you shortly";
+$msg="Your query has been sent. Our customer support will contact you shortly.";
 }
 else 
 {
-$error="Something went wrong. Please try again";
+$error="Something went wrong. Please try again later.";
 }
 
 }
@@ -87,7 +87,7 @@ $error="Something went wrong. Please try again";
 </head>
 <body>
 
-<<!-- Start Switcher -->
+<!-- Start Switcher -->
 <?php include('includes/colorswitcher.php');?>
 <!-- /Switcher -->  
         
@@ -97,19 +97,7 @@ $error="Something went wrong. Please try again";
 
 <!--Page Header-->
 <section class="page-header contactus_page">
-  <div class="container">
-    <div class="page-header_wrap">
-      <div class="page-heading">
-        <h1>Contact Us</h1>
-      </div>
-      <ul class="coustom-breadcrumb">
-        <li><a href="#">Home</a></li>
-        <li>Contact Us</li>
-      </ul>
-    </div>
-  </div>
-  <!-- Dark Overlay-->
-  <div class="dark-overlay"></div>
+  
 </section>
 <!-- /Page Header--> 
 
@@ -118,7 +106,7 @@ $error="Something went wrong. Please try again";
   <div class="container">
     <div  class="row">
       <div class="col-md-6">
-        <h3>Get in touch using the form below</h3>
+        <h3>Have any questions? Ask us, we won't bite.</h3>
           <?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
         else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
         <div class="contact_form gray-bg">
@@ -167,11 +155,11 @@ foreach($results as $result)
             </li>
             <li>
               <div class="icon_wrap"><i class="fa fa-phone" aria-hidden="true"></i></div>
-              <div class="contact_info_m"><a href="tel:61-1234-567-90"><?php   echo htmlentities($result->EmailId); ?></a></div>
+              <div class="contact_info_m"><a href="tel:61-1234-567-90"><?php   echo htmlentities($result->ContactNo); ?></a></div>
             </li>
             <li>
               <div class="icon_wrap"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
-              <div class="contact_info_m"><a href="mailto:contact@exampleurl.com"><?php   echo htmlentities($result->ContactNo); ?></a></div>
+              <div class="contact_info_m"><a href="mailto:contact@exampleurl.com"><?php   echo htmlentities($result->EmailId); ?></a></div>
             </li>
           </ul>
         <?php }} ?>
