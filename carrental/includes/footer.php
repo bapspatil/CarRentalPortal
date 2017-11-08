@@ -57,7 +57,6 @@ echo "<script>alert('Something went wrong. Please try again');</script>";
               </div>
               <button type="submit" name="emailsubscibe" class="btn btn-block">Subscribe <span class="angle_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span></button>
             </form>
-            <p class="subscribed-text">*We send great deals and latest auto news to our subscribed users very week.</p>
           </div>
         </div>
       </div>
@@ -67,19 +66,10 @@ echo "<script>alert('Something went wrong. Please try again');</script>";
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-md-push-6 text-right">
-          <div class="footer_widget">
-            <p>Connect with Us:</p>
-            <ul>
-              <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-            </ul>
-          </div>
+        <p>1RN15CS033 | 5th Semester | RNSIT</p>
         </div>
         <div class="col-md-6 col-md-pull-6">
-          <p class="copy-right">Copyright &copy; 2017 Car Rental Portal. All Rights Reserved</p>
+          <p class="copy-right">A car rental portal for the DBMS mini-project by Bapusaheb Patil.</p>
         </div>
       </div>
     </div>
