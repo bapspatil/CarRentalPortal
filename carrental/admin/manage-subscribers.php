@@ -98,9 +98,7 @@ $msg="Subscriber info deleted";
 											<th>Action</th>
 										</tr>
 									</thead>
-									
 									<tbody>
-
 									<?php $sql = "CALL GetAllSubscribers";
 $query = $dbh -> prepare($sql);
 $query->execute();
