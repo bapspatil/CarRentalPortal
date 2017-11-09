@@ -109,7 +109,7 @@ $msg="Subscriber info deleted";
 									</tfoot>
 									<tbody>
 
-									<?php $sql = "SELECT * from tblsubscribers";
+									<?php $sql = "CALL GetAllSubscribers";
 $query = $dbh -> prepare($sql);
 $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
