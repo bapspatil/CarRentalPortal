@@ -94,7 +94,7 @@ if($query->rowCount() > 0)
 {
 foreach($results as $result)
 {  ?>
-        <div class="product-listing-m gray-bg">
+          <div class="product-listing-m gray-bg">
           <div class="product-listing-img"><img src="admin/img/vehicleimages/<?php echo htmlentities($result->Vimage1);?>" class="img-responsive" alt="Image" /> </a> 
           </div>
           <div class="product-listing-content">
@@ -110,78 +110,6 @@ foreach($results as $result)
         </div>
       <?php }} ?>
          </div>
-      
-      <!--Side-Bar-->
-      <!-- <aside class="col-md-3 col-md-pull-9">
-        <div class="sidebar_widget">
-          <div class="widget_heading">
-            <h5><i class="fa fa-filter" aria-hidden="true"></i> Find Your  Car </h5>
-          </div>
-          <div class="sidebar_filter">
-            <form action="search-carresult.php" method="post">
-              <div class="form-group select">
-                <select class="form-control" name="brand">
-                  <option>Select Brand</option>
-
-                  <?php $sql = "SELECT * from  tblbrands ";
-$query = $dbh -> prepare($sql);
-$query->execute();
-$results=$query->fetchAll(PDO::FETCH_OBJ);
-$cnt=1;
-if($query->rowCount() > 0)
-{
-foreach($results as $result)
-{       ?>  
-<option value="<?php echo htmlentities($result->id);?>"><?php echo htmlentities($result->BrandName);?></option>
-<?php }} ?>
-                 
-                </select>
-              </div>
-              <div class="form-group select">
-                <select class="form-control" name="fueltype">
-                  <option>Select Fuel Type</option>
-<option value="Petrol">Petrol</option>
-<option value="Diesel">Diesel</option>
-<option value="CNG">CNG</option>
-                </select>
-              </div>
-             
-              <div class="form-group">
-                <button type="submit" class="btn btn-block"><i class="fa fa-search" aria-hidden="true"></i> Search Car</button>
-              </div>
-            </form>
-          </div>
-        </div>
-
-        <div class="sidebar_widget">
-          <div class="widget_heading">
-            <h5><i class="fa fa-car" aria-hidden="true"></i> Recently Listed Cars</h5>
-          </div>
-          <div class="recent_addedcars">
-            <ul>
-<?php $sql = "SELECT tblvehicles.*,tblbrands.BrandName,tblbrands.id as bid  from tblvehicles join tblbrands on tblbrands.id=tblvehicles.VehiclesBrand order by id desc limit 4";
-$query = $dbh -> prepare($sql);
-$query->execute();
-$results=$query->fetchAll(PDO::FETCH_OBJ);
-$cnt=1;
-if($query->rowCount() > 0)
-{
-foreach($results as $result)
-{  ?>
-
-              <li class="gray-bg">
-                <div class="recent_post_img"> <a href="vehical-details.php?vhid=<?php echo htmlentities($result->id);?>"><img src="admin/img/vehicleimages/<?php echo htmlentities($result->Vimage1);?>" alt="image"></a> </div>
-                <div class="recent_post_title"> <a href="vehical-details.php?vhid=<?php echo htmlentities($result->id);?>"><?php echo htmlentities($result->BrandName);?> , <?php echo htmlentities($result->VehiclesTitle);?></a>
-                  <p class="widget_price">$<?php echo htmlentities($result->PricePerDay);?> Per Day</p>
-                </div>
-              </li>
-              <?php }} ?>
-              
-            </ul>
-          </div>
-        </div>
-      </aside> -->
-      <!--/Side-Bar--> 
     </div>
   </div>
 </section>
