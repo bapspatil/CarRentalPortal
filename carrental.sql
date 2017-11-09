@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Nov 09, 2017 at 02:22 PM
+-- Generation Time: Nov 09, 2017 at 02:26 PM
 -- Server version: 5.7.20-log
 -- PHP Version: 7.1.10
 
@@ -86,20 +86,19 @@ INSERT INTO `tblbooking` (`id`, `userEmail`, `VehicleId`, `FromDate`, `ToDate`, 
 CREATE TABLE `tblbrands` (
   `id` int(11) NOT NULL,
   `BrandName` varchar(120) NOT NULL,
-  `CreationDate` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  `UpdationDate` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP
+  `CreationDate` timestamp NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `tblbrands`
 --
 
-INSERT INTO `tblbrands` (`id`, `BrandName`, `CreationDate`, `UpdationDate`) VALUES
-(1, 'Maruti', '2017-11-09 05:04:13', '2017-11-09 05:04:13'),
-(2, 'BMW', '2017-11-09 05:04:26', NULL),
-(3, 'Toyota', '2017-06-18 16:25:24', NULL),
-(4, 'Hyundai', '2017-11-09 06:40:00', NULL),
-(5, 'Honda', '2017-11-09 05:03:38', NULL);
+INSERT INTO `tblbrands` (`id`, `BrandName`, `CreationDate`) VALUES
+(1, 'Maruti', '2017-11-09 05:04:13'),
+(2, 'BMW', '2017-11-09 05:04:26'),
+(3, 'Toyota', '2017-06-18 16:25:24'),
+(4, 'Hyundai', '2017-11-09 06:40:00'),
+(5, 'Honda', '2017-11-09 05:03:38');
 
 --
 -- Triggers `tblbrands`
