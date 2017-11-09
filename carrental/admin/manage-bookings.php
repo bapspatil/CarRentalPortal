@@ -121,19 +121,6 @@ $msg="Booking Successfully Confirmed";
 											<th>Action</th>
 										</tr>
 									</thead>
-									<tfoot>
-										<tr>
-										<th>#</th>
-										<th>Name</th>
-											<th>Vehicle</th>
-											<th>From Date</th>
-											<th>To Date</th>
-											<th>Message</th>
-											<th>Status</th>
-											<th>Posting date</th>
-											<th>Action</th>
-										</tr>
-									</tfoot>
 									<tbody>
 
 									<?php $sql = "SELECT tblusers.FullName,tblbrands.BrandName,tblvehicles.VehiclesTitle,tblbooking.FromDate,tblbooking.ToDate,tblbooking.message,tblbooking.VehicleId as vid,tblbooking.Status,tblbooking.PostingDate,tblbooking.id  from tblbooking join tblvehicles on tblvehicles.id=tblbooking.VehicleId join tblusers on tblusers.EmailId=tblbooking.userEmail join tblbrands on tblvehicles.VehiclesBrand=tblbrands.id  ";

@@ -94,19 +94,12 @@ $msg="Subscriber info deleted";
 									<thead>
 										<tr>
 										<th>#</th>
-												<th>Email Id</th>
+												<th>Email ID</th>
 											<th>Subscription Date</th>
 											<th>Action</th>
 										</tr>
 									</thead>
-									<tfoot>
-										<tr>
-										<th>#</th>
-										<th>Email Id</th>
-										<th>Subscription Date</th>
-											<th>Action</th>
-										</tr>
-									</tfoot>
+									
 									<tbody>
 
 									<?php $sql = "CALL GetAllSubscribers";

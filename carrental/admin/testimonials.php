@@ -99,11 +99,11 @@ $msg="Testimonial Successfully Active";
 				<div class="row">
 					<div class="col-md-12">
 
-						<h2 class="page-title">Manage Testimonials</h2>
+						<h2 class="page-title">Manage Reviews</h2>
 
 						<!-- Zero Configuration Table -->
 						<div class="panel panel-default">
-							<div class="panel-heading">User Testimonials</div>
+							<div class="panel-heading">User Reviews</div>
 							<div class="panel-body">
 							<?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
 				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
@@ -113,21 +113,12 @@ $msg="Testimonial Successfully Active";
 										<th>#</th>
 											<th>Name</th>
 											<th>Email</th>
-											<th>Testimonials</th>
+											<th>Reviews</th>
 											<th>Posting date</th>
 											<th>Action</th>
 										</tr>
 									</thead>
-									<tfoot>
-										<tr>
-										<th>#</th>
-											<th>Name</th>
-											<th>Email</th>
-											<th>Testimonials</th>
-											<th>Posting date</th>
-											<th>Action</th>
-										</tr>
-									</tfoot>
+									
 									<tbody>
 
 									<?php $sql = "SELECT tblusers.FullName,tbltestimonial.UserEmail,tbltestimonial.Testimonial,tbltestimonial.PostingDate,tbltestimonial.status,tbltestimonial.id from tbltestimonial join tblusers on tblusers.Emailid=tbltestimonial.UserEmail";

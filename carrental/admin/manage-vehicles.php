@@ -96,24 +96,12 @@ $msg="Vehicle  record deleted successfully";
 										<th>#</th>
 											<th>Vehicle Title</th>
 											<th>Brand </th>
-											<th>Price Per day</th>
+											<th>Price Per Day</th>
 											<th>Fuel Type</th>
 											<th>Model Year</th>
 											<th>Action</th>
 										</tr>
 									</thead>
-									<tfoot>
-										<tr>
-										<th>#</th>
-										<th>Vehicle Title</th>
-											<th>Brand </th>
-											<th>Price Per day</th>
-											<th>Fuel Type</th>
-											<th>Model Year</th>
-											<th>Action</th>
-										</tr>
-										</tr>
-									</tfoot>
 									<tbody>
 
 <?php $sql = "SELECT tblvehicles.VehiclesTitle,tblbrands.BrandName,tblvehicles.PricePerDay,tblvehicles.FuelType,tblvehicles.ModelYear,tblvehicles.id from tblvehicles join tblbrands on tblbrands.id=tblvehicles.VehiclesBrand";
