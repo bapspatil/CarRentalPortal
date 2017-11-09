@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Nov 09, 2017 at 11:19 AM
+-- Generation Time: Nov 09, 2017 at 02:22 PM
 -- Server version: 5.7.20-log
 -- PHP Version: 7.1.10
 
@@ -264,35 +264,24 @@ CREATE TABLE `tblvehicles` (
   `Vimage1` varchar(120) DEFAULT NULL,
   `Vimage2` varchar(120) DEFAULT NULL,
   `Vimage3` varchar(120) DEFAULT NULL,
-  `Vimage4` varchar(120) DEFAULT NULL,
-  `Vimage5` varchar(120) DEFAULT NULL,
   `AirConditioner` int(11) DEFAULT NULL,
-  `PowerDoorLocks` int(11) DEFAULT NULL,
   `AntiLockBrakingSystem` int(11) DEFAULT NULL,
-  `BrakeAssist` int(11) DEFAULT NULL,
   `PowerSteering` int(11) DEFAULT NULL,
-  `DriverAirbag` int(11) DEFAULT NULL,
-  `PassengerAirbag` int(11) DEFAULT NULL,
   `PowerWindows` int(11) DEFAULT NULL,
-  `CDPlayer` int(11) DEFAULT NULL,
-  `CentralLocking` int(11) DEFAULT NULL,
-  `CrashSensor` int(11) DEFAULT NULL,
-  `LeatherSeats` int(11) DEFAULT NULL,
-  `RegDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `UpdationDate` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP
+  `RegDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `tblvehicles`
 --
 
-INSERT INTO `tblvehicles` (`id`, `VehiclesTitle`, `VehiclesBrand`, `VehiclesOverview`, `PricePerDay`, `FuelType`, `ModelYear`, `SeatingCapacity`, `Vimage1`, `Vimage2`, `Vimage3`, `Vimage4`, `Vimage5`, `AirConditioner`, `PowerDoorLocks`, `AntiLockBrakingSystem`, `BrakeAssist`, `PowerSteering`, `DriverAirbag`, `PassengerAirbag`, `PowerWindows`, `CDPlayer`, `CentralLocking`, `CrashSensor`, `LeatherSeats`, `RegDate`, `UpdationDate`) VALUES
-(1, 'M5 E39', 2, 'The E39 M5 is probably the best M5 ever. It has a naturally aspirated 4.9 liter V8 that produces 400 hp and combine that with 4 doors, a Getrag 6 speed manual, and a rear wheel drive shaft, you’ll have a perfect car for both daily driving and track days.', 3800, 'Petrol', 2003, 5, 'BMW-E39-M5-By-Vorsteiner-Image-35-750x500.jpg', 'e39-m5-drift.jpg', 'maxresdefault.jpg', 'what-to-look-for-when-buying-a-bmw-e39-m5_4.jpg', '', 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, '2017-06-19 11:46:23', '2017-11-08 19:25:03'),
-(2, 'Ciaz', 1, 'The Ciaz is loaded with features to make it truly a space where you can relax. The interiors are intuitively designed keeping in mind comfort and utility.', 1900, 'Diesel', 2015, 6, 'img-7.jpg', 'img-4.jpg', 'img-3.jpg', 'New-Maruti-Ciaz-2018-Facelift-4.jpeg', '', 1, 1, 1, 1, 1, 0, 1, NULL, 1, 1, NULL, NULL, '2017-06-19 16:16:17', '2017-11-08 19:25:17'),
-(3, 'Etios', 3, 'It isn’t found in a lap time. Or a 0–100 number. Or even on a price tag. It’s built on an obsession to detail. And a radical belief that a real supercar delivers performance in real-world conditions. Anywhere. Anytime. So refined, anyone can drive it. Yet so capable, in the right hands it can turn the automotive world on its ear. The Ford Etios. Its history speaks of world-beating performance, but the pursuit will always be of pure exhilaration.', 2700, 'CNG', 2012, 5, 'New-Toyota-Etios-front-quarter-launched-in-Brazil.jpg', '20160920123111_DSP_9248.jpg', 'IMG20160921WA0000.jpg', 'etios1b.jpg', '', 1, 1, 1, 1, 1, 1, NULL, 1, 1, NULL, NULL, NULL, '2017-06-19 16:18:20', '2017-11-08 19:33:03'),
-(4, 'Elite i20', 4, 'The 1.4 CRDi engine is technologically advanced engine in the Hyundai diesel ... The petrol variants of Elite i20 offer light weight and a robust 5-speed manual.', 2400, 'Diesel', 2014, 5, 'hyundai-elite-i20-marina-blue.png', 'Hyundai-Elite-i20-Right-Front-Three-Quarter-94070.jpg', 'in_ext_ib_fl_front_viewa.png', 'hyundai-elite-i20-image-9889.jpg', NULL, NULL, NULL, 0, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, '2017-11-09 06:41:24', '2017-11-09 06:48:31'),
-(5, 'City', 5, 'Honda City, a car with classy & luxury look, is available in diesel & petrol versions. Enjoy comfort and safety along with impressive power & best in class mileage.', 3400, 'Petrol', 2007, 6, 'honda-city-white-orchid-pearl.png', 'Honda-City-Right-Front-Three-Quarter-90680.jpg', 'Honda-City-Left-Side-View-102403.jpg', 'honda-city-rear-side.jpg', NULL, 0, NULL, NULL, NULL, 0, NULL, NULL, 0, NULL, NULL, NULL, NULL, '2017-11-09 05:08:56', '2017-11-09 06:51:45'),
-(6, 'Innova', 3, 'Toyota Dual Variable Valve Timing with Intelligence (Dual VVT-i) ensures a more ... Provide a warm welcome every time you approach the Innova Crystal.', 1800, 'Petrol', 2011, 7, 'toyota-innova-crysta-grey.png', 'c_h_2.jpg', 'TI-5.jpg', 'Toyota-Innova-Crysta-at-2017-Bangkok-International-Motor-Show-rear-three-quarters.jpg', NULL, NULL, NULL, 0, NULL, NULL, 0, NULL, NULL, 0, NULL, NULL, NULL, '2017-11-09 05:39:25', '2017-11-09 06:53:23');
+INSERT INTO `tblvehicles` (`id`, `VehiclesTitle`, `VehiclesBrand`, `VehiclesOverview`, `PricePerDay`, `FuelType`, `ModelYear`, `SeatingCapacity`, `Vimage1`, `Vimage2`, `Vimage3`, `AirConditioner`, `AntiLockBrakingSystem`, `PowerSteering`, `PowerWindows`, `RegDate`) VALUES
+(1, 'M5 E39', 2, 'The E39 M5 is probably the best M5 ever. It has a naturally aspirated 4.9 liter V8 that produces 400 hp and combine that with 4 doors, a Getrag 6 speed manual, and a rear wheel drive shaft, you’ll have a perfect car for both daily driving and track days.', 3800, 'Petrol', 2003, 5, 'BMW-E39-M5-By-Vorsteiner-Image-35-750x500.jpg', 'e39-m5-drift.jpg', 'maxresdefault.jpg', 1, 1, 0, 1, '2017-06-19 11:46:23'),
+(2, 'Ciaz', 1, 'The Ciaz is loaded with features to make it truly a space where you can relax. The interiors are intuitively designed keeping in mind comfort and utility.', 1900, 'Diesel', 2015, 6, 'img-7.jpg', 'img-4.jpg', 'img-3.jpg', 1, 1, 1, NULL, '2017-06-19 16:16:17'),
+(3, 'Etios', 3, 'It isn’t found in a lap time. Or a 0–100 number. Or even on a price tag. It’s built on an obsession to detail. And a radical belief that a real supercar delivers performance in real-world conditions. Anywhere. Anytime. So refined, anyone can drive it. Yet so capable, in the right hands it can turn the automotive world on its ear. The Ford Etios. Its history speaks of world-beating performance, but the pursuit will always be of pure exhilaration.', 2700, 'CNG', 2012, 5, 'New-Toyota-Etios-front-quarter-launched-in-Brazil.jpg', '20160920123111_DSP_9248.jpg', 'IMG20160921WA0000.jpg', 1, 1, 1, 1, '2017-06-19 16:18:20'),
+(4, 'Elite i20', 4, 'The 1.4 CRDi engine is technologically advanced engine in the Hyundai diesel ... The petrol variants of Elite i20 offer light weight and a robust 5-speed manual.', 2400, 'Diesel', 2014, 5, 'hyundai-elite-i20-marina-blue.png', 'Hyundai-Elite-i20-Right-Front-Three-Quarter-94070.jpg', 'in_ext_ib_fl_front_viewa.png', NULL, 0, NULL, NULL, '2017-11-09 06:41:24'),
+(5, 'City', 5, 'Honda City, a car with classy & luxury look, is available in diesel & petrol versions. Enjoy comfort and safety along with impressive power & best in class mileage.', 3400, 'Petrol', 2007, 6, 'honda-city-white-orchid-pearl.png', 'Honda-City-Right-Front-Three-Quarter-90680.jpg', 'Honda-City-Left-Side-View-102403.jpg', 0, NULL, 0, 0, '2017-11-09 05:08:56'),
+(6, 'Innova', 3, 'Toyota Dual Variable Valve Timing with Intelligence (Dual VVT-i) ensures a more ... Provide a warm welcome every time you approach the Innova Crystal.', 1800, 'Petrol', 2011, 7, 'toyota-innova-crysta-grey.png', 'c_h_2.jpg', 'TI-5.jpg', NULL, 0, NULL, NULL, '2017-11-09 05:39:25');
 
 --
 -- Indexes for dumped tables
