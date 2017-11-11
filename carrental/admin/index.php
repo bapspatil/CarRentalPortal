@@ -32,7 +32,7 @@ echo "<script type='text/javascript'> document.location = 'reg-users.php'; </scr
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<title>Car Rental Portal | Admin Login</title>
+	<title>Admin Login</title>
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
@@ -45,25 +45,24 @@ echo "<script type='text/javascript'> document.location = 'reg-users.php'; </scr
 
 <body>
 	
-	<div class="login-page bk-img" style="background-image: url(img/login-bg.jpg);">
+	<div class="login-page bk-img" style="background-image: url(img/login-bg.png);">
 		<div class="form-content">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 col-md-offset-3">
-						<h1 class="text-center text-bold text-light mt-4x">Sign in</h1>
-						<div class="well row pt-2x pb-3x bk-light">
+						<h1 class="text-center text-bold text-light mt-4x">Admin Sign-In</h1>
+						<h5 class="text-center text-light">Car Rental Portal by Harshitha J & Bapusaheb Patil</h5>
+						<div>
 							<div class="col-md-8 col-md-offset-2">
+							<br/><br/>
 								<form method="post">
-
-									<label for="" class="text-uppercase text-sm">Your Username </label>
+									<label for="" class="text-uppercase text-sm" style="color:white">Admin Username</label>
 									<input type="text" placeholder="Username" name="username" class="form-control mb">
 
-									<label for="" class="text-uppercase text-sm">Password</label>
+									<label for="" class="text-uppercase text-sm" style="color:white">Admin Password</label>
 									<input type="password" placeholder="Password" name="password" class="form-control mb">
 
-								
-
-									<button class="btn btn-primary btn-block" name="login" type="submit">LOGIN</button>
+									<button class="btn btn-primary btn-block" name="login" type="submit">LOGIN AS ADMIN</button>
 
 								</form>
 							</div>

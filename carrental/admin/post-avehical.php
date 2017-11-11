@@ -92,7 +92,7 @@ $error="Something went wrong. Please try again";
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Car Rental Portal | List A Car</title>
+	<title>List A Car</title>
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -236,10 +236,6 @@ Image 3<span style="color:red"></span><input type="file" name="img3" required>
 
 
 <div class="form-group">
-<div class="col-sm-4">
-Image 4<span style="color:red"></span><input type="file" name="img4" required>
-</div>
-
 </div>
 <div class="hr-dashed"></div>									
 </div>

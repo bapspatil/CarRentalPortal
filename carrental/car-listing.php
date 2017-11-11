@@ -72,7 +72,7 @@ $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
 $cnt=$query->rowCount();
 ?>
-<p><span><?php echo htmlentities($cnt);?> Listings</span></p>
+<p><span>We currently have <?php echo htmlentities($cnt);?> cars available!</span></p>
 </div>
 </div>
 
@@ -96,7 +96,7 @@ foreach($results as $result)
               <li><i class="fa fa-calendar" aria-hidden="true"></i><?php echo htmlentities($result->ModelYear);?> model</li>
               <li><i class="fa fa-car" aria-hidden="true"></i><?php echo htmlentities($result->FuelType);?></li>
             </ul>
-            <a href="vehical-details.php?vhid=<?php echo htmlentities($result->id);?>" class="btn">View Details <span class="angle_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+            <a href="vehical-details.php?vhid=<?php echo htmlentities($result->id);?>" class="btn">See Details</a>
           </div>
         </div>
       <?php }} ?>
