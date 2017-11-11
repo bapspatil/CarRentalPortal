@@ -90,18 +90,12 @@ error_reporting(0);
 <!--Register-Form -->
 <?php include('includes/registration.php');?>
 
-<!--/Register-Form --> 
-
-<!--Forgot-password-Form -->
-<?php include('includes/forgotpassword.php');?>
-<!--/Forgot-password-Form --> 
+<!--/Register-Form -->  
 
 <!-- Scripts --> 
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script> 
 <script src="assets/js/interface.js"></script> 
-<!--Switcher-->
-<script src="assets/switcher/js/switcher.js"></script>
 <!--bootstrap-slider-JS--> 
 <script src="assets/js/bootstrap-slider.min.js"></script> 
 <!--Slider-JS--> 
@@ -110,5 +104,4 @@ error_reporting(0);
 
 </body>
 
-<!-- Mirrored from themes.webmasterdriver.net/carforyou/demo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 16 Jun 2017 07:22:11 GMT -->
 </html>

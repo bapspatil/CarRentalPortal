@@ -16,9 +16,7 @@ if($query->rowCount() > 0)
 $_SESSION['alogin']=$_POST['username'];
 echo "<script type='text/javascript'> document.location = 'change-password.php'; </script>";
 } else{
-  
   echo "<script>alert('Invalid Details');</script>";
-
 }
 
 }
