@@ -74,7 +74,7 @@ echo "<script>alert('Something went wrong. Please try again');</script>";
 
 <?php 
 $vhid=intval($_GET['vhid']);
-$sql = "SELECT tblvehicles.*,tblbrands.BrandName,tblbrands.id as bid  from tblvehicles join tblbrands on tblbrands.id=tblvehicles.VehiclesBrand where tblvehicles.id=:vhid";
+$sql = "SELECT tblvehicles.*,brands.BrandName,brands.id as bid  from tblvehicles join brands on brands.id=tblvehicles.VehiclesBrand where tblvehicles.id=:vhid";
 $query = $dbh -> prepare($sql);
 $query->bindParam(':vhid',$vhid, PDO::PARAM_STR);
 $query->execute();

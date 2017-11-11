@@ -12,7 +12,7 @@ if(isset($_POST['submit']))
 {
 $brand=$_POST['brand'];
 $id=$_GET['id'];
-$sql="update  tblbrands set BrandName=:brand where id=:id";
+$sql="update  brands set BrandName=:brand where id=:id";
 $query = $dbh->prepare($sql);
 $query->bindParam(':brand',$brand,PDO::PARAM_STR);
 $query->bindParam(':id',$id,PDO::PARAM_STR);
@@ -100,7 +100,7 @@ $msg="Brand updted successfully";
 
 <?php	
 $id=$_GET['id'];
-$ret="select * from tblbrands where id=:id";
+$ret="select * from brands where id=:id";
 $query= $dbh -> prepare($ret);
 $query->bindParam(':id',$id, PDO::PARAM_STR);
 $query-> execute();

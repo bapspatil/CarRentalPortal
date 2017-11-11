@@ -115,7 +115,7 @@ $msg="Data updated successfully";
 <?php if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php } ?>
 <?php 
 $id=intval($_GET['id']);
-$sql ="SELECT tblvehicles.*,tblbrands.BrandName,tblbrands.id as bid from tblvehicles join tblbrands on tblbrands.id=tblvehicles.VehiclesBrand where tblvehicles.id=:id";
+$sql ="SELECT tblvehicles.*,brands.BrandName,brands.id as bid from tblvehicles join brands on brands.id=tblvehicles.VehiclesBrand where tblvehicles.id=:id";
 $query = $dbh -> prepare($sql);
 $query-> bindParam(':id', $id, PDO::PARAM_STR);
 $query->execute();
@@ -136,7 +136,7 @@ foreach($results as $result)
 <div class="col-sm-4">
 <select class="selectpicker" name="brandname" required>
 <option value="<?php echo htmlentities($result->bid);?>"><?php echo htmlentities($bdname=$result->BrandName); ?> </option>
-<?php $ret="select id,BrandName from tblbrands";
+<?php $ret="select id,BrandName from brands";
 $query= $dbh -> prepare($ret);
 //$query->bindParam(':id',$id, PDO::PARAM_STR);
 $query-> execute();

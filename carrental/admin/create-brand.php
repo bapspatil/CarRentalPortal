@@ -11,7 +11,7 @@ else{
 if(isset($_POST['submit']))
 {
 $brand=$_POST['brand'];
-$sql="INSERT INTO  tblbrands(BrandName) VALUES(:brand)";
+$sql="INSERT INTO  brands(BrandName) VALUES(:brand)";
 $query = $dbh->prepare($sql);
 $query->bindParam(':brand',$brand,PDO::PARAM_STR);
 $query->execute();
