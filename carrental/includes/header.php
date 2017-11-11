@@ -14,7 +14,7 @@
             <li class="dropdown"> <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle" aria-hidden="true"></i> 
 <?php 
 $email=$_SESSION['login'];
-$sql ="SELECT FullName FROM tblusers WHERE EmailId=:email ";
+$sql ="SELECT FullName FROM reg_users WHERE EmailId=:email ";
 $query= $dbh -> prepare($sql);
 $query-> bindParam(':email', $email, PDO::PARAM_STR);
 $query-> execute();
