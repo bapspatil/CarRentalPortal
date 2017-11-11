@@ -17,8 +17,6 @@
 					</ul>
 				</li>
 				<li><a href="manage-bookings.php"><i class="fa fa-users"></i> Manage Bookings</a></li>
-
-				<li><a href="testimonials.php"><i class="fa fa-table"></i> Manage Reviews</a></li>
 				<li><a href="reg-users.php"><i class="fa fa-users"></i> Registered Users</a></li>
 
 			</ul>

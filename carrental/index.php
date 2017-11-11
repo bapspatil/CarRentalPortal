@@ -60,9 +60,7 @@ error_reporting(0);
       <h2>Find Your Car, In Our Radar</h2>
       <p>Take to the roads in a car you love. Be in control of the wheels and spin stories on roads. We have the keys for you to unlock happiness as you drive away with your loved ones. Find us in your neighborhood with our fleet spread over in 21 Cities. So whenever you find the roads calling, we will always be near you with 250+ pick-up locations. Ready to drive yourself to your next adventure in a car you love?</p>
     </div>
-    <div class="row"> 
-      
-      
+    <div class="row">
     </div>
   </div>
 </section>

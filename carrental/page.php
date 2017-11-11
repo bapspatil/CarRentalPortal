@@ -39,24 +39,6 @@ include('includes/config.php');
         
 <!--Header-->
 <?php include('includes/header.php');?>
-                      <?php 
-$pagetype=$_GET['type'];
-$sql = "SELECT type,detail,PageName from tblpages where type=:pagetype";
-$query = $dbh -> prepare($sql);
-$query->bindParam(':pagetype',$pagetype,PDO::PARAM_STR);
-$query->execute();
-$results=$query->fetchAll(PDO::FETCH_OBJ);
-$cnt=1;
-if($query->rowCount() > 0)
-{
-foreach($results as $result)
-{ ?>
-<section class="page-header aboutus_page">
-  <div class="container">
-  </div>
-  <!-- Dark Overlay-->
-  <div class="dark-overlay"></div>
-</section>
 
 <section class="about_us section-padding">
 
@@ -64,19 +46,18 @@ foreach($results as $result)
 <img src="assets/images/mypic1.png" alt="About Me1" width="256" height="256"></center>
   <div class="container">
     <div class="section-header text-center">
-
-
-      <h2><?php   echo htmlentities($result->PageName); ?></h2>
-      <p><?php  echo $result->detail; ?> </p>
+      <br/><br/><br/>
+      <h2>About Us</h2>
+      <p>We are a car rental portal based in Bangalore. We wanted to build an easy-to-use and economic car rental portal, that people can use everyday to rent a car and go about their day to day life, without having to worry about the troubles of getting around the city.<br/><br/> 
+Our CEO, Mr. Bapusaheb Patil, the dude in the above picture, is a 19-year-old Android enthusiast and UX/UI designer.<br/>
+He loves making apps and memes, although not specifically in that order.
+<br/><br/>
+Our COO, Miss Harshitha J, the lady in the above picture, is a 20-year-old web developer and an exceptional back-end developer.<br/>
+She is a continuous chatterbox who loves chatting and taking selfies everywhere she goes.<br/><br/>
+      </p>
     </div>
-   <?php } }?>
   </div>
 </section>
-<!-- /About-us--> 
-
-
-
-
 
 <<!--Footer -->
 <?php include('includes/footer.php');?>

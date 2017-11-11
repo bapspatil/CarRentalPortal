@@ -42,7 +42,7 @@ foreach($results as $result)
         <ul class="nav navbar-nav">
           <li><a href="index.php">Home</a></li>
           <li><a href="car-listing.php">Cars</a>
-          <li><a href="page.php?type=aboutus">About Us</a></li>
+          <li><a href="page.php">About Us</a></li>
           <li><a href="admin/">Admin Area</a></li>
           <li><?php   if(strlen($_SESSION['login'])==0)
 	{	
