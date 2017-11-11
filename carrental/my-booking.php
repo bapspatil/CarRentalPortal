@@ -66,7 +66,7 @@ foreach($results as $result)
           <?php echo htmlentities($result->City);?>&nbsp;<?php echo htmlentities($result->Country); }}?></p>
       </div>
     </div>
-    <div class="row">
+    <div class="row" style="margin-right:150px; margin-left:150px">
       <div class="col-md-12 col-sm-12">
         <div class="profile_wrap">
           <h5 class="uppercase underline">My Bookings</h5>
