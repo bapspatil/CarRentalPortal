@@ -11,7 +11,7 @@ else{
 if(isset($_REQUEST['del']))
 	{
 $delid=intval($_GET['del']);
-$sql = "delete from tblvehicles SET id=:status WHERE  id=:delid";
+$sql = "delete from vehicles SET id=:status WHERE  id=:delid";
 $query = $dbh->prepare($sql);
 $query -> bindParam(':delid',$delid, PDO::PARAM_STR);
 $query -> execute();
@@ -103,7 +103,7 @@ $msg="Vehicle  record deleted successfully";
 									</thead>
 									<tbody>
 
-<?php $sql = "SELECT tblvehicles.VehiclesTitle,brands.BrandName,tblvehicles.PricePerDay,tblvehicles.FuelType,tblvehicles.ModelYear,tblvehicles.id from tblvehicles join brands on brands.id=tblvehicles.VehiclesBrand";
+<?php $sql = "SELECT vehicles.VehiclesTitle,brands.BrandName,vehicles.PricePerDay,vehicles.FuelType,vehicles.ModelYear,vehicles.id from vehicles join brands on brands.id=vehicles.VehiclesBrand";
 $query = $dbh -> prepare($sql);
 $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);

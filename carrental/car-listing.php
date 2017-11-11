@@ -65,7 +65,7 @@ error_reporting(0);
           <div class="sorting-count">
 <?php 
 //Query for Listing count
-$sql = "SELECT id from tblvehicles";
+$sql = "SELECT id from vehicles";
 $query = $dbh -> prepare($sql);
 $query->bindParam(':vhid',$vhid, PDO::PARAM_STR);
 $query->execute();
@@ -76,7 +76,7 @@ $cnt=$query->rowCount();
 </div>
 </div>
 
-<?php $sql = "SELECT tblvehicles.*,brands.BrandName,brands.id as bid  from tblvehicles join brands on brands.id=tblvehicles.VehiclesBrand";
+<?php $sql = "SELECT vehicles.*,brands.BrandName,brands.id as bid  from vehicles join brands on brands.id=vehicles.VehiclesBrand";
 $query = $dbh -> prepare($sql);
 $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);

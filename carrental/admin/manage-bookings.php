@@ -122,7 +122,7 @@ $msg="Booking Successfully Confirmed";
 									</thead>
 									<tbody>
 
-									<?php $sql = "SELECT reg_users.FullName,brands.BrandName,tblvehicles.VehiclesTitle,bookings.FromDate,bookings.ToDate,bookings.message,bookings.VehicleId as vid,bookings.Status,bookings.PostingDate,bookings.id  from bookings join tblvehicles on tblvehicles.id=bookings.VehicleId join reg_users on reg_users.EmailId=bookings.userEmail join brands on tblvehicles.VehiclesBrand=brands.id  ";
+									<?php $sql = "SELECT reg_users.FullName,brands.BrandName,vehicles.VehiclesTitle,bookings.FromDate,bookings.ToDate,bookings.message,bookings.VehicleId as vid,bookings.Status,bookings.PostingDate,bookings.id  from bookings join vehicles on vehicles.id=bookings.VehicleId join reg_users on reg_users.EmailId=bookings.userEmail join brands on vehicles.VehiclesBrand=brands.id  ";
 $query = $dbh -> prepare($sql);
 $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);

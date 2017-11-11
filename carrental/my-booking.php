@@ -74,7 +74,7 @@ foreach($results as $result)
             <ul class="vehicle_listing">
 <?php 
 $useremail=$_SESSION['login'];
- $sql = "SELECT tblvehicles.Vimage1 as Vimage1,tblvehicles.VehiclesTitle,tblvehicles.id as vid,brands.BrandName,bookings.FromDate,bookings.ToDate,bookings.message,bookings.Status  from bookings join tblvehicles on bookings.VehicleId=tblvehicles.id join brands on brands.id=tblvehicles.VehiclesBrand where bookings.userEmail=:useremail";
+ $sql = "SELECT vehicles.Vimage1 as Vimage1,vehicles.VehiclesTitle,vehicles.id as vid,brands.BrandName,bookings.FromDate,bookings.ToDate,bookings.message,bookings.Status  from bookings join vehicles on bookings.VehicleId=vehicles.id join brands on brands.id=vehicles.VehiclesBrand where bookings.userEmail=:useremail";
 $query = $dbh -> prepare($sql);
 $query-> bindParam(':useremail', $useremail, PDO::PARAM_STR);
 $query->execute();
