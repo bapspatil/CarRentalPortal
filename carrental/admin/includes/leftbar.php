@@ -3,11 +3,7 @@
 			
 				<!-- <li><a href="dashboard.php"><i class="fa fa-dashboard"></i> Dashboard</a></li> -->
 			
-<li><a href="#"><i class="fa fa-files-o"></i> Brands</a>
-<ul>
-<li><a href="create-brand.php">List A Brand</a></li>
-<li><a href="manage-brands.php">Manage Existing Brands</a></li>
-</ul>
+<li><a href="manage-brands.php"><i class="fa fa-files-o"></i> Brands</a>
 </li>
 
 <li><a href="#"><i class="fa fa-sitemap"></i> Cars</a>
