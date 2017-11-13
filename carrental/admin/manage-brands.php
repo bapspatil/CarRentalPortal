@@ -95,7 +95,8 @@ $msg="Page data updated  successfully";
 										<tr>
 										<th>#</th>
 										<th>Brand Name</th>
-										<th>Creation Date</th>	
+										<th>Creation Date</th>
+										<th>Action</th>	
 										</tr>
 									</thead>
 									<tbody>
@@ -113,6 +114,8 @@ foreach($results as $result)
 											<td><?php echo htmlentities($cnt);?></td>
 											<td><?php echo htmlentities($result->BrandName);?></td>
 											<td><?php echo htmlentities($result->CreationDate);?></td>
+											<td>&nbsp;&nbsp;
+<a href="manage-brands.php?del=<?php echo $result->id;?>" onclick="return confirm('Do you want to delete');"><i class="fa fa-close"></i></a></td>
 										</tr>
 										<?php $cnt=$cnt+1; }} ?>
 										
