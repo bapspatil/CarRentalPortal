@@ -42,8 +42,8 @@ error_reporting(0);
       <div class="row">
         <div class="col-md-5 col-md-push-7">
           <div class="banner_content">
-            <h1>You need a car. Let us give you one.</h1>
-            <p>A car rental portal project by Harshitha J & Bapusaheb Patil.</p>
+            <h1>Car Rental Portal</h1>
+            <p>You need a car. Let us give you one.<br/>A car rental portal project by Harshitha J & Bapusaheb Patil.</p>
             </div>
         </div>
       </div>
