@@ -47,7 +47,7 @@ foreach($results as $result)
           <li><?php   if(strlen($_SESSION['login'])==0)
 	{	
 ?>
- <a href="#loginform" class="btn btn-xs uppercase" data-toggle="modal" data-dismiss="modal">Register / Login</a>
+ <a href="#loginform" data-toggle="modal" data-dismiss="modal">Register / Login</a>
 <?php }
 else{ 
 
